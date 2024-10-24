@@ -50,9 +50,24 @@ body {
 }
 
 .dropdown-item {
-    color: #333; 
+    color: #fffcfc; 
 }
 
 .dropdown-item:hover {
     background-color:deeppink;
+    color: #fffcfc; 
+}
+
+#carouselExample {
+    size: 10%;
+}
+
+.carousel {
+    max-width: 600px; 
+    margin: auto; 
+}
+
+.carousel-inner img {
+    width: 100%; 
+    height: auto; 
 }
