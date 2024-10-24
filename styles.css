@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     overflow-x: hidden; 
-    color:rgb(85, 11, 11);
-    background:rgb(77, 70, 73);
+    color:whitesmoke;
+    background:rgb(42, 44, 44);
 }
 
 .aside-menu {
@@ -23,8 +23,8 @@ body {
 }
 
 
-.h2 {
-    color:whitesmoke;
+.h2 { 
+    color:deeppink;
 }
 .close-btn {
     font-size: 24px;
@@ -83,4 +83,5 @@ body {
 
 .form-control {
             max-width: 100px; 
-        }
+            color: deeppink;
+}
