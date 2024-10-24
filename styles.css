@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
+    color:red;
+}
+
+.aside-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: pink;
+    transition: right 0.3s ease;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.aside-menu.active {
+    right: 0;
+}
+
+.close-btn {
+    font-size: 24px;
+    cursor: pointer;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.brand {
+    margin-bottom: 20px;
+}
+
+.navbar-nav .nav-item {
+    margin-bottom: 15px;
+}
+
+.nav-link {
+    color: #333;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    color:rgb(168, 16, 16);
+}
+
+.dropdown-menu {
+    background-color: rgb(221, 162, 172); 
+}
+
+.dropdown-item {
+    color: #333; 
+}
+
+.dropdown-item:hover {
+    background-color:deeppink;
+}
