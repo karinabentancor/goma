@@ -1,21 +1,22 @@
 body {
     font-family: Arial, sans-serif;
     overflow-x: hidden; 
-    color:red;
+    color:rgb(85, 11, 11);
+    background:rgb(77, 70, 73);
 }
 
 .aside-menu {
     position: fixed;
     top: 0;
-    right: -250px;
+    right: 0; 
     width: 250px;
     height: 100%;
-    background-color: pink;
-    transition: right 0.3s ease;
+    background-color: deeppink;
     padding: 20px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
+
 
 .aside-menu.active {
     right: 0;
@@ -37,12 +38,12 @@ body {
 }
 
 .nav-link {
-    color: #333;
+    color: #ffffff;
     transition: color 0.2s;
 }
 
 .nav-link:hover {
-    color:rgb(168, 16, 16);
+    color:grey;
 }
 
 .dropdown-menu {
@@ -58,7 +59,7 @@ body {
     color: #fffcfc; 
 }
 
-#carouselExample {
+#carousel-photos {
     size: 10%;
 }
 
