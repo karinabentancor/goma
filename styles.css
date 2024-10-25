@@ -85,3 +85,47 @@ body {
             max-width: 100px; 
             color: deeppink;
 }
+
+.btn-radio {
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+}
+
+.btn-radio {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+    margin: 5px;
+}
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: grey;
+}
+.btn-radio {
+    border-radius: 50%; 
+    width: 60px;
+    height: 60px;
+    font-size: 14px;
+    margin: 5px;
+}
+.form-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.aside-menu {
+    background-color: deeppink;
+    padding: 15px;
+    border-right: 1px solid #ddd;
+}

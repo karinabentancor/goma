@@ -1,17 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>custom</title>
 </head>
 <body>
-    
 
+<aside class="aside-menu" id="asideMenu">
+    <div class="brand">
+        <a class="navbar-brand" href="#">goma</a>
+    </div>
+    <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="wires.html">WIRES</a></li>
+        <li class="nav-item"><a class="nav-link" href="custom.html">CUSTOM</a></li>
+        <li class="nav-item"><a class="nav-link" href="fix.html">FIX</a></li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="splittersDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">SPLITTERS</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">XLR M - F.F</a></li>
+                <li><a class="dropdown-item" href="#">XLR F - M.M</a></li>
+                <li><a class="dropdown-item" href="#">TS - TS.TS</a></li>
+                <li><a class="dropdown-item" href="#">TRS - TRS.TRS</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
 
+<div class="container mt-5">
+        <h2>Say your wish</h2>
+        <form>
+            <div class="mb-3">
+                <label for="cantidadMetros" class="form-label">meters</label>
+                <input type="number" class="form-control" id="cantidadMetros" name="cantidadMetros" placeholder="how long in meters" required>
+            </div>
+            <div class="mb-3">
+                <label for="incrementador" class="form-label"></label>
+                <input type="number" class="form-control" id="incrementador" name="incrementador" value="1" min="1" required>
+            </div>
+            
+            <div class="form-section">
+                <div>
+                    <p>Extremo 1:</p>
+                    <div class="btn-group" role="group" aria-label="Extremo 1">
+                        <button type="button" class="btn btn-outline-primary btn-radio">XLR</button>
+                        <button type="button" class="btn btn-outline-secondary btn-radio">TRS</button>
+                        <button type="button" class="btn btn-outline-success btn-radio">TS</button>
+                    </div>
+                </div>
+                
+                <div>
+                    <p>Extremo 2:</p>
+                    <div class="btn-group" role="group" aria-label="Extremo 2">
+                        <button type="button" class="btn btn-outline-primary btn-radio">XLR</button>
+                        <button type="button" class="btn btn-outline-secondary btn-radio">TRS</button>
+                        <button type="button" class="btn btn-outline-success btn-radio">TS</button>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Buy</button>
+        </form>
+    </div>
 
-
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
