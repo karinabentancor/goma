@@ -187,7 +187,8 @@ body {
 }
 
 .btn-deep-pink:hover {
-    background-color: darkorange;
+    background-color: rgb(110, 10, 64);
+    color: antiquewhite;
 }
 
 .card-img-top {
