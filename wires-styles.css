@@ -139,7 +139,6 @@ body {
 #btn-XLR {
     border-right: 1px solid deeppink;
 
-
 }
 
 #btn-TRS{
@@ -147,4 +146,62 @@ body {
     background-color: antiquewhite;
     color: deeppink;
 
+}body {
+    background-color: rgb(42, 44, 44);
+    color: whitesmoke;
+}
+
+.card {
+    background-color: #2a2c2c;
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: antiquewhite;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.card-text {
+    color: #d3d3d3;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-deep-pink {
+    background-color: deeppink;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+.btn-deep-pink:hover {
+    background-color: darkorange;
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 3px solid deeppink;
+}
+
+.row-cols-md-2 {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 200px;
+    }
 }
