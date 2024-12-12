@@ -86,7 +86,7 @@
         <form id="cableForm">
             <div class="options">
                 <label><input type="radio" name="length" value="0.7"> 0,7 metros</label>
-                <label><input type="radio" name="length" value="1.5"> 1,5 metros</label>
+                <label><input type="radio" name="length" value="2">   2 metros</label>
                 <label><input type="radio" name="length" value="3.5"> 3,5 metros</label>
                 <label><input type="radio" name="length" value="5"> 5 metros</label>
             </div>
@@ -112,9 +112,9 @@
             const message = document.getElementById("cartMessage");
             
             if (length) {
-                message.textContent = `${quantity} cable(s) de ${length.value} metros agregado(s) al carrito.`;
+                message.textContent = `${quantity}  de ${length.value} metros ha sido agregado al carrito`;
             } else {
-                message.textContent = "Por favor, selecciona una longitud del cable.";
+                message.textContent = "Selecciona una longitud del cable.";
             }
         }
     </script>

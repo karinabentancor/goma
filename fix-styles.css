@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     overflow-x: hidden; 
     color: whitesmoke;
-    background: rgb(42, 44, 44); 
+    background: rgb(42, 44, 44);
 }
 
 .aside-menu {
@@ -36,51 +36,65 @@ body {
 }
 
 .dropdown-menu {
-    background-color: rgb(221, 162, 172);
+    background-color: rgb(221, 162, 172); 
 }
 
 .dropdown-item {
-    color: #fffcfc;
+    color: #fffcfc; 
 }
 
 .dropdown-item:hover {
     background-color: deeppink;
-    color: #fffcfc;
+    color: #fffcfc; 
 }
 
-button, .btn, .form-control {
-    border: 3px solid deeppink; 
+button, .btn {
+    background-color: deeppink;
+    color: white;
+    border: 3px solid deeppink;
+    padding: 8px 16px;
+    font-size: 1rem !important;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #d14c86;
+    color: antiquewhite;
+}
+
+input[type="file"] {
+    padding: 12px;
+    font-size: 1rem;
+    border: 3px solid deeppink !important;
+    background-color: antiquewhite !important;
+    color: deeppink !important;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    display: block;
+}
+
+input[type="file"]:hover {
+    background-color: deeppink !important;
+    color: antiquewhite !important;
+    border-color: deeppink !important;
 }
 
 textarea#description {
     background-color: transparent;
-    border: 3px solid antiquewhite;
+    border: 3px solid antiquewhite !important;
     color: antiquewhite;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 15px;
+    font-size: 1.1rem;
     width: 100%;
-    height: 150px;
-    resize: none; 
+    height: 200px;
+    resize: vertical;
 }
-
 
 textarea#description:focus {
-    outline: none; 
-}
-
-
-button[type="button"], .btn[type="button"] {
-    background-color: rgb(42, 44, 44);
-    color: deeppink;
-    border: 2px solid deeppink;
-    padding: 8px 16px;
-    font-size: 0.9rem;
-    border-radius: 5px;
-}
-
-button[type="button"]:hover, .btn[type="button"]:hover {
-    background-color: deeppink;
-    color: antiquewhite;
+    outline: none;
+    border-color: deeppink;
 }
 
 #dateTimeFormContainer {
@@ -89,6 +103,7 @@ button[type="button"]:hover, .btn[type="button"]:hover {
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
+    width: 100% !important;
 }
 
 #dateTimeFormContainer h1 {
@@ -99,8 +114,8 @@ button[type="button"]:hover, .btn[type="button"]:hover {
 
 #dateTimeFormContainer .form-control {
     background-color: transparent;
-    color: antiquewhite;
-    border: 2px solid deeppink;
+    color: antiquewhite !important;
+    border: 2px solid deeppink !important;
     border-radius: 5px;
 }
 
@@ -112,6 +127,8 @@ button[type="button"]:hover, .btn[type="button"]:hover {
 #dateTimeFormContainer button[type="button"] {
     width: 100%;
     margin-top: 10px;
+    font-size: 1.2rem !important;
+    display: none; /* Ocultamos el botón de enviar en esta sección */
 }
 
 .card {
@@ -127,16 +144,6 @@ button[type="button"]:hover, .btn[type="button"]:hover {
     font-size: 1.2rem;
 }
 
-button, .btn {
-    background-color: deeppink;
-    color: white;
-    border: none;
-    transition: background-color 0.3s;
-}
-
-button:hover, .btn:hover {
-    background-color: #d14c86; 
-}
 .btn-radio {
     border-radius: 50%;
     width: 60px;
@@ -146,34 +153,63 @@ button:hover, .btn:hover {
     background-color: antiquewhite;
     color: deeppink;
     border: none;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .btn-radio:hover {
     background-color: deeppink;
     color: antiquewhite;
 }
+
 .form-section {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
 }
 
-#carousel-photos {
-    size: 10%;
-}
-
 .carousel {
-    max-width: 600px; 
-    margin: auto; 
+    max-width: 100%;
+    margin: auto;
 }
 
 .carousel-inner img {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
 }
+
 #textCarousel {
     color: whitesmoke;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .form-control {
+        font-size: 0.9rem !important;
+    }
+
+    #dateTimeFormContainer, .form-section {
+        width: 100% !important;
+    }
+
+    .aside-menu {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .navbar-nav {
+        margin-top: 20px;
+    }
+
+    .btn, button[type="button"] {
+        font-size: 1rem !important;
+        padding: 10px 18px;
+    }
+
+    #dateTimeFormContainer button[type="button"].show {
+        display: block !important; /* Mostramos el botón cuando sea necesario */
+    }
 }
