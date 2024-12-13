@@ -1,8 +1,12 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden; 
     color:whitesmoke;
-    background:rgb(42, 44, 44);
+    background-color: #333;
+    
 }
 
 .aside-menu {
@@ -12,26 +16,24 @@ body {
     width: 250px;
     height: 100%;
     background-color: deeppink;
-    padding: 20px;
+    padding: 10px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
-
 
 .aside-menu.active {
     right: 0;
 }
 
-
 #title { 
-    color:antiquewhite;
+    color: antiquewhite;
     font-size: 4em;
 }
 
-
 .h2 { 
-    color:deeppink;
+    color: deeppink;
 }
+
 .close-btn {
     font-size: 24px;
     cursor: pointer;
@@ -53,7 +55,7 @@ body {
 }
 
 .nav-link:hover {
-    color:grey;
+    color: grey;
 }
 
 .dropdown-menu {
@@ -65,7 +67,7 @@ body {
 }
 
 .dropdown-item:hover {
-    background-color:deeppink;
+    background-color: deeppink;
     color: #fffcfc; 
 }
 
@@ -74,13 +76,14 @@ body {
 }
 
 .carousel {
-    max-width: 600px; 
-    margin: auto; 
+    width: 100%; /* Asegura que el carrusel ocupe todo el ancho */
+    height: 100vh; /* Asegura que el carrusel ocupe toda la altura */
 }
 
 .carousel-inner img {
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: 100%; /* Asegura que las imágenes ocupen el 100% de la altura */
+    object-fit: cover; /* Ajusta las imágenes sin distorsionar */
 }
 
 #textCarousel {
@@ -88,8 +91,8 @@ body {
 }        
 
 .form-control {
-            max-width: 100px; 
-            color: deeppink;
+    max-width: 100px; 
+    color: deeppink;
 }
 
 .btn-radio {
@@ -105,6 +108,7 @@ body {
     font-size: 14px;
     margin: 5px;
 }
+
 .form-section {
     display: flex;
     justify-content: space-between;
@@ -112,8 +116,8 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    
 }
+
 .btn-radio {
     border-radius: 50%; 
     width: 60px;
@@ -121,6 +125,7 @@ body {
     font-size: 14px;
     margin: 5px;
 }
+
 .form-section {
     display: flex;
     justify-content: space-between;
@@ -128,8 +133,8 @@ body {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    
 }
+
 .aside-menu {
     background-color: deeppink;
     padding: 15px;
@@ -138,13 +143,129 @@ body {
 
 #btn-XLR {
     border-right: 1px solid deeppink;
-
-
 }
 
-#btn-TRS{
+#btn-TRS {
     border-right: 5px solid deeppink;   
     background-color: antiquewhite;
     color: deeppink;
+}
+
+/* Botón para modo oscuro de la barra de navegación */
+input {
+    display: none;
+}
+
+/* Barra de fondo del switch */
+#labelsw {
+    width: 80px;
+    height: 40px;
+    border-radius: 999px;
+    background: #F3F3F3;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.05) inset;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 99px;
+    background: rgb(255, 185, 55);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05),
+    -10px -10px 30px rgba(0, 0, 0, 0.05) inset;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(10%, -50%);
+    transition: 0.5s; /* Tiempo de transición entre uno y otro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Imagen luna y sol */
+svg {
+    width: 16px;
+    position: absolute;
+}
+
+.sun {
+    color: #ffffff;
+    margin-top: 0%;
+    opacity: 1;
+}
+
+.moon {
+    margin-top: -150%;
+    color: white;
+    opacity: 0;
+}
+
+/* Circulo modo oscuro */
+input[type=checkbox]:checked + .display label .circle {
+    background: #6b6b6b;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+    -10px -10px 30px rgba(0, 0, 0, 0.5) inset;
+}
+
+/* Posición del sol en modo oscuro */
+input[type=checkbox]:checked + .display label .circle .sun {
+    margin-top: 150%;
+    opacity: 0;
+}
+
+/* Posición de la luna en modo oscuro */
+input[type=checkbox]:checked + .display label .circle .moon {
+    margin-top: 0%;
+    opacity: 1;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #f0f0f0; /* Fondo blanco o gris claro */
+    color: #333; /* Texto oscuro */
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Asegura que el footer ocupe todo el ancho de la página */
+    position: relative;
+    bottom: 0;
+}
+
+footer input {
+    background-color: #444;
+    color: deeppink;
+    border: 1px solid deeppink;
+    border-radius: 5px;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+footer button {
+    background-color: deeppink;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #ff007f;
+}
+
+footer p {
+    font-size: 14px; /* Letra más pequeña */
+    margin-top: 10px;
+    color: black;
+}
+
+
+.suscribe-email {
+    color: black;
 
 }

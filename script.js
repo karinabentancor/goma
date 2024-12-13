@@ -33,3 +33,4 @@ carouselItems.forEach((item, index) => {
                 alert("Por favor, complete ambos campos.");
             }
         }
+
