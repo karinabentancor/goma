@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "type": "XLR",
+        "description": "Cable de audio balanceado.",
+        "price": 900,
+        "stock": 50,
+        "details": {
+            "color": "black",
+            "connector": "XLR",
+            "length": "3 m"
+        }
+    },
+    {
+        "id": 2,
+        "type": "TRS",
+        "description": "Cable de audio balanceado.",
+        "price": 800,
+        "stock": 10,
+        "details": {
+            "color": "black",
+            "connector": "TRS",
+            "length": "3 m"
+        }
+    },
+    {
+        "id": 3,
+        "type": "TS",
+        "description": "Cable de audio no balanceado.",
+        "price": 25.99,
+        "stock": 10,
+        "details": {
+            "color": "pink",
+            "connector": "TS",
+            "length": "3 m"
+        }
+    },
+    {
+        "id": 4,
+        "type": "XLR-TRS",
+        "description": "Cable de audio balanceado.",
+        "price": 1200,
+        "stock": 20,
+        "details": {
+            "color": "black",
+            "connector": "XLR",
+            "length": "3 m"
+        }
+    },
+    {
+        "id": 5,
+        "type": "TSL",
+        "description": "Cable de audio no balanceado.",
+        "price": 750,
+        "stock": 10,
+        "details": {
+            "color": "black",
+            "connector": "TSL",
+            "length": "3 m"
+        }
+    },
+    {
+        "id": 6,
+        "type": "TS-TSL",
+        "description": "Cable de audio no balanceado.",
+        "price": 800,
+        "stock": 14,
+        "details": {
+            "color": "pink",
+            "connector": "TS",
+            "length": "3 m"
+        }
+    },
+    {
+        "id": 7,
+        "type": "SPEAKON",
+        "description": "Conector de alta potencia con bloqueo giratorio.",
+        "price": 800,
+        "stock": 14,
+        "details": {
+            "color": "pink",
+            "connector": "TS",
+            "length": "3 m"
+        }
+    }
+]

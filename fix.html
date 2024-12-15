@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/">
+    <link rel="stylesheet" href="/styles/styles.css">
     <link rel="stylesheet" href="styles/fix-styles.css">
     <title>goma / REPAIR</title>
 </head>
@@ -45,10 +45,10 @@
                 <input type="file" class="form-control" id="photo" name="photo" accept="image/*" required>
             </div>
             <div class="mb-3">
-                <label for="description" class="form-label">contanos sobre el problema</label>
+                <label for="description" class="form-label"placeholder="contanos sobre el problema"> </label>
                 <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
             </div>
-            <button type="submit" class="btn btn-dark">Fix me</button>
+            <button type="submit" class="btn btn-dark">Reparar</button>
         </form>
 
         <!DOCTYPE html>
@@ -56,11 +56,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ingresar Fecha y Hora</title>
 </head>
 <body>
     <div id="dateTimeFormContainer" class="card">
-        <h1>propuesta de fecha y hora</h1>
+        <h3>propuesta de fecha y hora</h3>
         <form id="dateTimeForm">
             <label for="date">seleccione una fecha:</label>
             <input type="date" id="date" name="date" class="form-control" required>
@@ -72,9 +71,7 @@
         </form>
         <div class="output" id="output"></div>
     </div>
-
-  
-
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

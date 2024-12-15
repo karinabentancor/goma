@@ -1,0 +1,64 @@
+.container {
+    margin-top: 100px;
+    text-align: center;
+}
+h2 {
+    color: deeppink;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: whitesmoke;
+    border: 1px solid deeppink;
+    border-radius: 5px;
+}
+button.btn-dark {
+    background-color: deeppink;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+button.btn-dark:hover {
+    background-color: #ff007f;
+    transform: scale(1.05);
+}
+
+#dateTimeFormContainer {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+#dateTimeFormContainer h1 {
+    color: deeppink;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+form label {
+    margin-bottom: 10px;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+form input {
+    margin-bottom: 15px;
+}
+#output {
+    margin-top: 20px;
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
