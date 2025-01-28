@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #333;  
+    background-color: whitesmoke;
     color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #444;
+    background-color: whitesmoke;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -32,6 +32,7 @@ body {
     font-weight: bold;
     color: whitesmoke;
 }
+
 .profile-image-container {
     position: relative;
     margin-bottom: 20px;
@@ -88,9 +89,9 @@ body {
 }
 
 .form-control {
-    background-color: #555;
+    background-color:whitesmoke;
     border: 1px solid #888;
-    color: white;
+    color: deeppink;
     padding: 10px;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -98,7 +99,7 @@ body {
 
 .form-control:focus {
     border-color: deeppink;
-    background-color: #333;
+    background-color: whitesmoke;
 }
 
 .btn-save {
@@ -116,6 +117,15 @@ body {
     background-color: #ff007f;
 }
 
+.prod {
+    margin-bottom: 20px;
+    border: 1px solid deeppink;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+ 
 
 @media (max-width: 768px) {
     .form-column {

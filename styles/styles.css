@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #333;
-    color: whitesmoke;
+    color: deeppink;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -66,14 +65,13 @@ body {
     transform: scale(1.05);
 }
 footer {
-    background-color: #222;
     color: whitesmoke;
     padding: 20px 0;
     text-align: center;
     margin-left: 250px;
 }
 footer input.form-control {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: whitesmoke;
     color: whitesmoke;
     border: 1px solid deeppink;
     border-radius: 5px;
