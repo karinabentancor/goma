@@ -76,6 +76,50 @@ body {
     background-color: #ff007f;
     transform: scale(1.05);
 }
+
+.login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+.login-container h2 {
+    margin-bottom: 20px;
+    color: deeppink;
+}
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.login-container .btn {
+    background-color: deeppink;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.login-container .btn:hover {
+    background-color: #ff007f;
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+.options a {
+    color: deeppink;
+    text-decoration: none;
+}
+.options a:hover {
+    text-decoration: underline;
+}
 footer {
     color: whitesmoke;
     padding: 20px 0;
