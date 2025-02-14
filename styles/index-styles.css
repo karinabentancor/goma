@@ -1,13 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: whitesmoke;
-    color: whitesmoke;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    height: 100%;
-}
-
 .aside-menu {
     position: fixed;
     top: 0;
@@ -21,7 +11,7 @@ body {
 }
 
 .aside-menu .navbar-brand {
-    font-size: 2rem;
+    font-size: 3.5em;
     font-weight: bold;
     color: whitesmoke;
     text-decoration: none;
@@ -92,35 +82,4 @@ footer {
     width: 100%;
     text-align: center;
     animation: slideInUp 0.5s ease-in-out;
-}
-
-@keyframes slideInUp {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-@media (max-width: 768px) {
-    .aside-menu {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-
-    #carousel-photos,
-    .text-center h2,
-    footer {
-        margin-left: 0;
-    }
-
-    #carousel-photos .carousel-inner img {
-        height: 60vh;
-    }
-
-    footer {
-        text-align: center;
-    }
 }

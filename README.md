@@ -1,5 +1,5 @@
 In this project, I’m working on a website for the cables I create. 
 
-I’m truly enjoying the process of combining my interests in web development, sound, and technology. I believe this project allows me to merge my skills into something both functional and creative.
+I really enjoy the process of combining my interests in web development, sound, and technology.
 
 https://karinabentancor.github.io/goma/

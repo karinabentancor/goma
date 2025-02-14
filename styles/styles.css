@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    color: deeppink;
+    color: rgb(26, 26, 26);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -61,7 +61,7 @@ body {
 .text-center h2 {
     color: deeppink;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 .btn {
     background-color: deeppink;
@@ -75,6 +75,10 @@ body {
 .btn:hover {
     background-color: #ff007f;
     transform: scale(1.05);
+}
+
+.container-fluid {
+    margin-left: 60px; 
 }
 
 .login-container {
@@ -140,26 +144,4 @@ footer button.btn-dark {
 }
 footer button.btn-dark:hover {
     background-color: #ff007f;
-}
-
-
-@media (max-width: 768px) {
-    .aside-menu {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-
-    .container-fluid,
-    footer {
-        margin-left: 0;
-    }
-
-    #carousel-photos {
-        height: 50vh;
-    }
-
-    .btn {
-        width: 100%;
-    }
 }
